@@ -1,14 +1,14 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: khaki;
-  color: darkgray;
+  background-color: #657937;
+  color: #A9A9A9;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: darkgray;
-  color: khaki;
+  background-color: #A9A9A9;
+  color: #657937;
   text-align: center;
   padding: 20px;
 }
@@ -35,8 +35,8 @@ header img {
 }
 
 footer {
-  background-color: darkgray;
-  color: khaki;
+  background-color: #A9A9A9;
+  color: #657937;
   text-align: center;
   padding: 10px;
   position: fixed;
