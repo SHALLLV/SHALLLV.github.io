@@ -9,7 +9,7 @@ body {
 
 header {
   background-color: #292c3c;
-  color: #f4f4f4;
+  color: #fff;
   text-align: center;
   padding: 2%;
 }
@@ -36,7 +36,7 @@ header img {
   display: inline-block;
   margin: 10px;
   text-align: center;
-  cursor: pointer; /* Add cursor pointer for interactive feel */
+  cursor: pointer;
 }
 
 .team-member img {
@@ -62,7 +62,7 @@ header img {
 
 footer {
   background-color: #292c3c;
-  color: #f4f4f4;
+  color: #fff;
   text-align: center;
   padding: 10px;
   position: fixed;
@@ -79,13 +79,15 @@ h1, h2 {
 .promo-video {
   background: linear-gradient(135deg, #f7a64b, #f5515f);
   color: #fff;
+  height: auto; /* Set height to auto for responsive resizing based on width */
 }
 
 .promo-video iframe {
   border: none;
   width: 100%;
-  height: 56.25vw; /* 16:9 aspect ratio */
-  max-height: 400px; /* Maximum height for smaller screens */
+  height: auto; /* Set height to auto for responsive resizing based on width */
+  min-height: 400px; /* Ensure minimum height for better visibility */
+  max-height: 70vh; /* Limit maximum height to 70% of viewport height */
 }
 
 @media (max-width: 768px) {
