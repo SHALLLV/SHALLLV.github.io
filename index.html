@@ -5,6 +5,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us - SHALL</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #292c3c;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #292c3c;
+      color: #fff;
+      text-align: center;
+      padding: 2%;
+    }
+    
+    header img {
+      width: 100px;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .company-info, .promo-video, .team, .fake-reviews, .contact-us {
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .team-member {
+      display: inline-block;
+      margin: 10px;
+      text-align: center;
+      cursor: pointer;
+    }
+    
+    .team-member img {
+      width: 100px;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+    
+    .team-member:hover img {
+      transform: scale(1.1);
+    }
+    
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .team-member {
+      flex: 0 0 calc(25% - 20px);
+      max-width: calc(25% - 20px);
+    }
+    
+    .footer {
+      background-color: #292c3c;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    
+    .promo-video {
+      background-color: #fff;
+      color: #292c3c;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .promo-video iframe {
+      border: none;
+      width: 80%; /* Adjust width for desktop */
+      height: auto; /* Set height to auto for responsive resizing based on width */
+      min-height: 400px; /* Ensure minimum height for better visibility */
+      max-height: 70vh; /* Limit maximum height to 70% of viewport height */
+    }
+    
+    .fake-reviews {
+      background-color: #fff;
+      color: #292c3c;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+    
+    .contact-us {
+      background-color: #fff;
+      color: #292c3c;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -22,8 +129,7 @@
 
   <section class="promo-video">
     <h2>Promo Video</h2>
-    <!-- Add your promo video embed code or placeholder here -->
-    <!-- Example: -->
+    <!-- Adjusted YouTube video width -->
     <iframe width="640" height="390" 
     src="https://www.youtube.com/embed/JDOjFnN9RXw?si=lu3HVZPe64tczOxJ}" 
     frameborder="0" allowfullscreen></iframe>
@@ -31,32 +137,47 @@
 
   <section class="team">
     <h2>Meet the Team</h2>
-    <div class="team-member">
-      <img src="janis.png" alt="Jānis Bašēns">
-      <p><strong>Jānis Bašēns</strong> - CEO</p>
-    </div>
-    <div class="team-member">
-      <img src="roberts.png" alt="Roberts Assarovskis">
-      <p><strong>Roberts Assarovskis</strong> - Head of Operations</p>
-    </div>
-    <div class="team-member">
-      <img src="rotislavs.png" alt="Rotislavs Berjoza">
-      <p><strong>Rotislavs Berjoza</strong> - Programmer</p>
-    </div>
-    <div class="team-member">
-      <img src="mihails.png" alt="Mihaels Pallijs">
-      <p><strong>Mihaels Pallijs</strong> - Programmer</p>
-    </div>
-    <div class="team-member">
-      <img src="arturs.png" alt="Artūrs Bogdanovs">
-      <p><strong>Artūrs Bogdanovs</strong> - Marketing</p>
+    <div class="team-members">
+      <div class="team-member">
+        <img src="janis.png" alt="Jānis Bašēns">
+        <p><strong>Jānis Bašēns</strong> - CEO</p>
+      </div>
+      <div class="team-member">
+        <img src="roberts.png" alt="Roberts Assarovskis">
+        <p><strong>Roberts Assarovskis</strong> - Head of Operations</p>
+      </div>
+      <div class="team-member">
+        <img src="rotislavs.png" alt="Rotislavs Berjoza">
+        <p><strong>Rotislavs Berjoza</strong> - Programmer</p>
+      </div>
+      <div class="team-member">
+        <img src="mihails.png" alt="Mihaels Pallijs">
+        <p><strong>Mihaels Pallijs</strong> - Programmer</p>
+      </div>
+      <div class="team-member">
+        <img src="arturs.png" alt="Artūrs Bogdanovs">
+        <p><strong>Artūrs Bogdanovs</strong> - Marketing</p>
+      </div>
     </div>
   </section>
 
-  <footer>
+  <section class="fake-reviews">
+    <h2>Fake Reviews</h2>
+    <p>Amazing app! It helped me save a lot of money on my shopping.</p>
+    <p>Highly recommend! Great user experience and fantastic deals.</p>
+    <p>SHALL app is a game-changer! I never miss out on discounts now.</p>
+  </section>
+
+  <section class="contact-us">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or inquiries, feel free to contact us at:</p>
+    <p>Email: info@shall.com</p>
+    <p>Phone: +1234567890</p>
+  </section>
+
+  <footer class="footer">
     <p>&copy; 2024 SHALL. All rights reserved.</p>
   </footer>
   <script src="script.js"></script>
 </body>
 </html>
-
