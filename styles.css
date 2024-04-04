@@ -18,10 +18,15 @@ header img {
   width: 100px;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .company-info, .promo-video, .team {
-  max-width: 80%;
-  margin: 2% auto;
-  padding: 4%;
+  margin: 20px auto;
+  padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -29,20 +34,37 @@ header img {
 
 .team-member {
   display: inline-block;
-  margin: 4%;
+  margin: 10px;
   text-align: center;
+  cursor: pointer; /* Add cursor pointer for interactive feel */
 }
 
 .team-member img {
   width: 100px;
   border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+  transform: scale(1.1);
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  flex: 0 0 calc(25% - 20px);
+  max-width: calc(25% - 20px);
 }
 
 footer {
   background-color: #292c3c;
   color: #f4f4f4;
   text-align: center;
-  padding: 1%;
+  padding: 10px;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -62,24 +84,20 @@ h1, h2 {
 .promo-video iframe {
   border: none;
   width: 100%;
-  height: auto; /* Set height to auto for responsive resizing based on width */
+  height: 56.25vw; /* 16:9 aspect ratio */
+  max-height: 400px; /* Maximum height for smaller screens */
 }
 
-.team-member:hover img {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
+@media (max-width: 768px) {
+  .team-member {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
 }
 
-footer p {
-  font-size: 0.9em;
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-
-footer p:hover {
-  animation: pulse 1s infinite;
+@media (max-width: 576px) {
+  .team-member {
+    flex: 0 0 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
 }
