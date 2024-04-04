@@ -79,15 +79,13 @@ h1, h2 {
 .promo-video {
   background: linear-gradient(135deg, #f7a64b, #f5515f);
   color: #fff;
-  height: auto; /* Set height to auto for responsive resizing based on width */
 }
 
 .promo-video iframe {
   border: none;
   width: 100%;
-  height: auto; /* Set height to auto for responsive resizing based on width */
-  min-height: 400px; /* Ensure minimum height for better visibility */
-  max-height: 70vh; /* Limit maximum height to 70% of viewport height */
+  height: 56.25vw; /* 16:9 aspect ratio */
+  max-height: 400px; /* Maximum height for smaller screens */
 }
 
 @media (max-width: 768px) {
