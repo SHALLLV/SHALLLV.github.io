@@ -62,7 +62,7 @@ h1, h2 {
 .promo-video iframe {
   border: none;
   width: 100%;
-  height: 400px;
+  height: auto; /* Set height to auto for responsive resizing based on width */
 }
 
 .team-member:hover img {
