@@ -1,6 +1,6 @@
 body, h1, h2, h3, h4, h5 {
     font-family: "Raleway", sans-serif;
-    color: #fff; /* Text color */
+    color: #292c3c; /* Text color */
 }
 
 body {
@@ -85,10 +85,12 @@ header img {
 .review-text {
     font-style: italic;
     margin-bottom: 5px;
+    color: #292c3c; /* Text color */
 }
 
 .review-author {
     font-weight: bold;
+    color: #292c3c; /* Text color */
 }
 
 .info-box {
