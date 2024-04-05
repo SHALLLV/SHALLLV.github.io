@@ -31,23 +31,19 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-.banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.logo {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+.banner h1 {
+    font-size: 2em;
+    color: #fff;
 }
 
 .logo img {
-    width: 100px;
+    width: 150px; /* Increased logo size */
 }
 
 /* Section Styles */
@@ -57,33 +53,8 @@ section {
 
 /* Promo Video Styles */
 .promo-video iframe {
-    width: 60%;
-    height: 400px;
-    object-fit: cover;
-}
-
-/* Team Styles */
-.team-members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.team-member {
-    flex: 0 0 calc(25% - 20px);
-    max-width: calc(25% - 20px);
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.team-member img {
-    width: 100px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-}
-
-.team-member:hover img {
-    transform: scale(1.1);
+    width: 75%;
+    height: 500px;
 }
 
 /* Review Styles */
@@ -124,4 +95,42 @@ section {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     text-align: left;
+}
+
+.office-images .inside-office .image-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Outside Office Styles */
+.outside-office {
+  margin-bottom: 40px;
+}
+
+.outside-office-content {
+  text-align: left; /* Align text to the left */
+}
+
+.outside-office-content h2 {
+  margin-bottom: 20px;
+}
+
+.outside-office-content .image-box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.outside-office-content address {
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.outside-office-content iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  display: block;
 }
