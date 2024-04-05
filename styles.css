@@ -134,3 +134,22 @@ section {
   margin: 0 auto;
   display: block;
 }
+
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .team-member {
+    flex: 0 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    text-align: center;
+  }
+  .team-member img {
+    width: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  .team-member:hover img {
+    transform: scale(1.1);
+  }
