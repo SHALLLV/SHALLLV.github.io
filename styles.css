@@ -1,81 +1,97 @@
 body, h1, h2, h3, h4, h5 {
     font-family: "Raleway", sans-serif;
-    color: #292c3c; /* Text color */
-  }
-  body {
+    color: #fff; /* Text color */
+}
+
+body {
     background-color: #f4f4f4; /* Background color */
     margin: 0;
     padding: 0;
-  }
-  header {
+}
+
+header {
     background-color: #292c3c; /* Header background color */
     color: #fff; /* Header text color */
     text-align: center;
     padding: 32px 0;
-  }
-  header img {
+}
+
+header img {
     width: 100px;
-  }
-  .container {
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-  }
-  .company-info, .promo-video, .team, .reviews, .contact-us {
+}
+
+.company-info, .promo-video, .team, .reviews, .contact-us {
     margin-bottom: 40px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  }
-  .promo-video iframe {
+}
+
+.promo-video iframe {
     border: none;
     width: 100%; /* Adjusted width to 100% */
     height: 100%; /* Adjusted height to 100% */
     object-fit: cover; /* Added object-fit property */
     min-height: 400px; /* Ensure minimum height for better visibility */
     max-height: 70vh; /* Limit maximum height to 70% of viewport height */
-  }
-  .team-members {
+}
+
+.team-members {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .team-member {
+}
+
+.team-member {
     flex: 0 0 calc(25% - 20px);
     max-width: calc(25% - 20px);
     text-align: center;
-  }
-  .team-member img {
+}
+
+.team-member img {
     width: 100px;
     border-radius: 50%;
     transition: transform 0.3s ease;
-  }
-  .team-member:hover img {
+}
+
+.team-member:hover img {
     transform: scale(1.1);
-  }
-  .review {
+}
+
+.review {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
-  }
-  .review img {
+}
+
+.review img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
-  }
-  .review-content {
+}
+
+.review-content {
     flex: 1;
-  }
-  .review-text {
+}
+
+.review-text {
     font-style: italic;
     margin-bottom: 5px;
-  }
-  .review-author {
+}
+
+.review-author {
     font-weight: bold;
-  }
-  .info-box {
+}
+
+.info-box {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -85,8 +101,9 @@ body, h1, h2, h3, h4, h5 {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     text-align: left;
-  }
-  .footer {
+}
+
+.footer {
     background-color: #292c3c;
     color: #fff;
     text-align: center;
@@ -94,5 +111,4 @@ body, h1, h2, h3, h4, h5 {
     position: fixed;
     bottom: 0;
     width: 100%;
-  }
-  
+}
