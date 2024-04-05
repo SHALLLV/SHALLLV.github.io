@@ -1,49 +1,15 @@
-/* CSS styles */
-
-/* Adjustments for the banner and logo-name */
-.banner {
-  position: relative;
-  width: 100%;
-}
-
-.banner img {
-  width: 100%;
-}
-
-.logo-name {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.logo-name img {
-  width: 100px;
-}
-
-.logo-name h1 {
-  color: #fff;
-  font-size: 2em;
-  margin-top: 10px;
-}
-
-/* Rest of your CSS styles */
-body, h1, h2, h3, h4, h5 {
-    font-family: "Raleway", sans-serif;
-    color: #292c3c; /* Text color */
-}
-
-body {
-    background-color: #f4f4f4; /* Background color */
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #292c3c; /* Header background color */
-    text-align: center;
-    padding: 0;
+/* Global Styles */
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #f4f4f4;
+    color: #292c3c;
 }
 
 .container {
@@ -52,4 +18,120 @@ header {
     padding: 20px;
 }
 
-/* Add your additional CSS styles here */
+/* Header Styles */
+header {
+    background-color: #292c3c;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.logo img {
+    width: 100px;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 40px;
+}
+
+/* Promo Video Styles */
+.promo-video iframe {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Team Styles */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    flex: 0 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    width: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+}
+
+/* Review Styles */
+.review {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.review img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review-content {
+    flex: 1;
+}
+
+.review-text {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.review-author {
+    font-weight: bold;
+}
+
+/* Info Box Styles */
+.info-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #292c3c;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #292c3c;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
