@@ -21,7 +21,7 @@ body {
 /* Header Styles */
 header {
     position: relative;
-    height: 200px; /* Adjust height as needed */
+    height: 300px; /* Adjust the height of the header as needed */
     overflow: hidden;
 }
 
