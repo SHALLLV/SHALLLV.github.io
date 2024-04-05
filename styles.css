@@ -1,3 +1,34 @@
+/* CSS styles */
+
+/* Adjustments for the banner and logo-name */
+.banner {
+  position: relative;
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.logo-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.logo-name img {
+  width: 100px;
+}
+
+.logo-name h1 {
+  color: #fff;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+/* Rest of your CSS styles */
 body, h1, h2, h3, h4, h5 {
     font-family: "Raleway", sans-serif;
     color: #292c3c; /* Text color */
@@ -11,13 +42,8 @@ body {
 
 header {
     background-color: #292c3c; /* Header background color */
-    color: #fff; /* Header text color */
     text-align: center;
-    padding: 32px 0;
-}
-
-header img {
-    width: 100px;
+    padding: 0;
 }
 
 .container {
@@ -26,91 +52,4 @@ header img {
     padding: 20px;
 }
 
-.company-info, .promo-video, .team, .reviews, .contact-us {
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.promo-video iframe {
-    border: none;
-    width: 100%; /* Adjusted width to 100% */
-    height: 100%; /* Adjusted height to 100% */
-    object-fit: cover; /* Added object-fit property */
-    min-height: 400px; /* Ensure minimum height for better visibility */
-    max-height: 70vh; /* Limit maximum height to 70% of viewport height */
-}
-
-.team-members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.team-member {
-    flex: 0 0 calc(25% - 20px);
-    max-width: calc(25% - 20px);
-    text-align: center;
-}
-
-.team-member img {
-    width: 100px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-}
-
-.team-member:hover img {
-    transform: scale(1.1);
-}
-
-.review {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-
-.review img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.review-content {
-    flex: 1;
-}
-
-.review-text {
-    font-style: italic;
-    margin-bottom: 5px;
-    color: #292c3c; /* Text color */
-}
-
-.review-author {
-    font-weight: bold;
-    color: #292c3c; /* Text color */
-}
-
-.info-box {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #292c3c;
-    color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    text-align: left;
-}
-
-.footer {
-    background-color: #292c3c;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+/* Add your additional CSS styles here */
